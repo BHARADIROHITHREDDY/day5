@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.w3schools.com/html/">
+   <center> <img src="https://assets.thehansindia.com/h-upload/2024/05/22/1448467-tsrtc.webp" alt="" width="150"></center>
+   <h1><center>TELANGANA STATE ROAD TRANSPORT CORPORATION</center></h1>
+   <h2><center>GENERAL BUS PASS APPLICATION</center></h2>
+    <center>
+   <fieldset>
+    <legend><span style="color: blue;">Application Details</span></legend>
+    <label for="name">Name:<span style="color: red;" autocorrect="off" >*</span></label>
+    <input type="text" name="name" required>
+    <label>Father's/GrandFather Name:<span style="color: red;">*</span></label>
+    <input type="text" name="Father's/GrandFather Name" required><br>
+    <label>Date of  Birth:<span style="color: red;">*</span></label>
+    <input type="number" required >
+    <label for="">Gender:<span style="color: red;">*</span></label>
+    <input type="radio" name="Gender" id="male" value="male" required>
+    <label for="male">male</label>
+    <input type="radio" name="Gender" id="female" value="female" required>
+    <label for="female">female</label>
+    <br>
+    <label for="age">Age As on:<span style="color: red;">*</span></label>
+    <label for="Day">Day</label>
+    <input type="number" id="Day" name="Day" min="1" max="30" required>
+    <label for="month">Month</label>
+    <input type="number" id="month" name="month" min="1" max="12" required>
+    <label for="year">Year</label>
+    <input type="number" id="year" name="year" min="1900" max="2030" required>
+    <label for="Aadhaar No" >Aadhaar No:<span style="color: red;">*</span></label>
+    <input type="" id="Aadhaar No" name="Aadhaar No" min="0" max="15" required><br>
+    <label for="WhatsApp No">WhatsApp No:<span style="color: red;">*</span></label>
+    <input type="" id="WhatsApp No" name="WhatsApp No" min="10" max="" required>
+    <label for="E-mail Id">E-mail Id:<span style="color: red;">*</span></label>
+    <input type="email" id="E-mail Id" name="E-mail Id" required><br>
+    <label for="Photo"> Photo:<span style="color: red;">*</span></label>
+    <input type="file" name="Photo" required>
+   </fieldset>
+   </center>
+   <center>
+    <fieldset>
+        <legend ><span style="color: blue;">Residential Address Details</span></legend>
+        <label for="Application Address">Application Address:<span style="color: red;">*</span></label>
+        <textarea type="text" name="Address" id="Application address" rows="5" required></textarea>
+        <legend for="District">District:<span style="color: red;">*</span></legend>
+        <select name="District" id="District" required>
+        <option value="" selected disabled>--Select--</option>
+        <option value=""> Hyderabad</option>
+        <option value="">Sangareddy</option>
+        <option value="">Rangareddy</option>
+        </select>
+        <br>
+        <legend for="Mandal">Mandal:<span style="color: red;">*</span></legend>
+        <select name="Mandal" id="Mandal" required>
+        <option value="" selected disabled>--Select--</option>
+        <option value="Hyderabad" >Hyderabad</option>
+        <option value="Sangareddy">Sangareddy</option>
+        <option value="Rangareddy">Rangareddy</option>    
+        </select>
+        <legend for="Village">Village:<span style="color: red;">*</span></legend>
+        <select name="Village" id="Village" required>
+        <option value="" selected disabled>--Select--</option>
+        <option value="Nizampat">Nizampat</option>
+        <option value="kphb">kphb</option>
+        <option value="Maisammaguda">Maisammaguda</option>    
+        </select>
+        <br>
+        <legend for="Pincode">Pincode:<span style="color: red;">*</span></legend>
+        <input id="Pincode" type="" name="Pincode" max="10" required>
+    </fieldset>
+    </center>
+    <center>
+        <fieldset>
+        <legend><span style="color: blue;">Pass Type Details</span></legend>    
+        <legend for="City">City:<span style="color: red;">*</span></legend>
+        <select  name="City" id="City" required>
+        <option value=""selected disabled>--Select--</option>
+        <option value="Nizampat">Hyderabad</option>
+        <option value="kphb">kphb</option>
+        <option value="Maisammaguda">Maisammaguda</option> 
+         </select>  <br>
+        <legend for="Pass Type">Pass Type:<span style="color: red;">*</span></legend>
+        <select name="pass Type" id="pass Type" required>
+        <option value="" selected disabled>--Select--</option>
+        <option value="GREATER PASS">GREATER PASS</option>
+        <option value="ORDINARY">ORDINARY pass</option>
+        <option value="METRO EXPRESS PASS">METRO EXPRESS PASS</option>
+        <option value="METRO DELUXE PASS">METRO DELUXE PASS</option> 
+         </select>    
+        </fieldset>
+    </center>
+    <center>
+        <fieldset>
+            <legend><span style="color: blue;">Mode of Payment & Pass Collection</span></legend>
+            <dev>
+            <legend for="Payment Mode">Payment Mode:<span style="color: red;">*</span></legend>
+            <select name="Payment" id="Payment" required>
+            <option value="" selected disabled>--Select Payment Mode--</option>
+            <option value="Payment at Counter">Payment at Counter</option>
+            </select>
+            </dev>
+            <dev>
+            <legend for="Pass Delivery Mode">Pass Delivery Mode:<span style="color: red;">*</span></legend>
+            <select name="Pass Delivery Mode" id="Pass Delivery Mode" required>
+            <option value="" selected disabled>--Select Pass Payment Mode--</option>
+            <option value=" At Counter">At Counter</option>
+            </select>
+            </dev>
+            <br>
+            <legend for="Center at Which you Want to Collect Pass">Center at Which you Want to Collect Pass:<span style="color: red;">*</span></legend>
+            <select name="Center at Which you Want to Collect Pass" id="Center at Which you Want to Collect Pass" required> 
+            <option value="" selected disabled>--Select--</option>
+            <option value="KPHB">KPHB"></option>
+              <option value="Maisammaguda">Maisammaguda</option>
+               <option value="Nizampat">Nizampat</option>
+                <option value="BHEL">BHEL</option>
+            </select>  
+        </fieldset>
+    </center>
+    <center>
+         <img src="https://tse4.mm.bing.net/th/id/OIP.czlrhOA1lBeAMBl2TDb5sQHaDJ?pid=Api&P=0&h=180" width="120" >
+         <img src="https://www.drupal.org/files/issues/2022-09-23/recaptcha-project-browser-transparent.png" width="50"><br>
+         <input><br>
+         <input type="submit" style="color: orange;" >
+    </center>
+    </form>
+   
+    
+</body>
+</html>

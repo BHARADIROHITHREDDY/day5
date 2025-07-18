@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+            font-family: "Segoe UI",Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        body{
+            background: linear-gradient(135deg, #74abe2, #5563de);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            position: relative;
+            width: 600px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        .panel{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 600px;
+            height: 100%;
+            display: flex;
+            transition: transform o.8s ease;
+        }
+        .login-card,.welcome-card{
+            background: white;
+            width: 320px;
+            padding: 40px;
+            background: white;
+        }
+        .login-card  {
+           border-top-left-radius: 15px;
+           border-bottom-left-radius: 15px;
+        }
+        .welcome-card{
+            background: #5563de;
+            color: white;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-card h2{
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+        .input-group{
+            margin-bottom: 20px;
+
+        }
+        .input-group label{
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .input-group input{
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid#ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s; 
+        }
+        .input-group input:focus{
+            border-color: #5563de;
+        }
+        .login-btn{
+            width: 100%;
+            padding: 12px;
+            background: #5563de;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .login-btn:hover{
+            background: #3d48b0;
+        }
+        .login-footer{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .login-footer a {
+            text-decoration: none;
+            color: #5563de;
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel" id="panel">
+    <div class="login-card">
+        <h2>Login</h2>
+        <form onsubmit="returnloginUser()">
+            <div class="input-group">
+                <label for="username">username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <div class="login-footer">
+            <a onclick="alert('Forgot password clicked')">Forgot password?</a>
+        </div>
+    </div>
+    <div class="modal" id="forgotModal">
+        <div class="welcome-card">
+            <h2>Welcome!</h2>
+            <p style="text-align:center;">you have Successfully logged in.</p>
+            </div>
+    </div>
+    </div>
+    <script>
+        function slideLogin(){
+            var username=document.getElementById('user name');value;
+            var password=document.getElementById('password').value;
+            if(username && password){
+               document.getElementById('panel').style.transform='translatex(-300px)';
+            }else{
+                alert("please enter username and password");
+            }
+            return false;
+        }
+    </script>
+    
+        
+    
+</body>
+</html>
